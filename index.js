@@ -126,27 +126,27 @@ const LolKey = 'Ini Apikey'                 //LOLHUMAN
     			
       
             const { text, extendedText, contact, caption, location, liveLocation, image, video,quotedMsgObj, sticker, document, audio, product } = MessageType
-  			const mentionByTag = type == "extendedTextMessage" && zay.message.extendedTextMessage.contextInfo != null ? zay.message.extendedTextMessage.contextInfo.mentionedJid : []
-		    const mentionByReply = type == "extendedTextMessage" && zay.message.extendedTextMessage.contextInfo != null ? zay.message.extendedTextMessage.contextInfo.participant || "" : ""
-		    const mention = typeof(mentionByTag) == 'string' ? [mentionByTag] : mentionByTag
-	    	mention != undefined ? mention.push(mentionByReply) : []
-		    const mentionUser = mention != undefined ? mention.filter(n => n) : []
-		    var pes = (type === 'conversation' && zay.message.conversation) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text ? zay.message.extendedTextMessage.text : ''
-		    const messagesC = pes.slice(0).trim()
+  	    const mentionByTag = type == "extendedTextMessage" && zay.message.extendedTextMessage.contextInfo != null ? zay.message.extendedTextMessage.contextInfo.mentionedJid : []
+	    const mentionByReply = type == "extendedTextMessage" && zay.message.extendedTextMessage.contextInfo != null ? zay.message.extendedTextMessage.contextInfo.participant || "" : ""
+	    const mention = typeof(mentionByTag) == 'string' ? [mentionByTag] : mentionByTag
+	    mention != undefined ? mention.push(mentionByReply) : []
+	    const mentionUser = mention != undefined ? mention.filter(n => n) : []
+	    var pes = (type === 'conversation' && zay.message.conversation) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text ? zay.message.extendedTextMessage.text : ''
+	    const messagesC = pes.slice(0).trim()
 		
 	
      //BY TANAKA (ALL PREFIX)
             const cmd = (type === 'conversation' && zay.message.conversation) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text ? zay.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
-		    const prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#$%^&./\\©^]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™✓=|~xzZ+×_*!#$,|`÷?;:%^&./\\©^]/gi) : '-'	  
-		    var pes = (type === 'conversation' && zay.message.conversation) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text ? zay.message.extendedTextMessage.text : ''
+            const prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#$%^&./\\©^]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™✓=|~xzZ+×_*!#$,|`÷?;:%^&./\\©^]/gi) : '-'	  
+	    var pes = (type === 'conversation' && zay.message.conversation) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text ? zay.message.extendedTextMessage.text : ''
             const messagesCC = pes.slice(0).trim().split(/ +/).shift()		  
-		    body = (type === 'conversation' && zay.message.conversation.startsWith(prefix)) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption.startsWith(prefix) ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption.startsWith(prefix) ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text.startsWith(prefix) ? zay.message.extendedTextMessage.text : ''	
-			budy = (type === 'conversation') ? zay.message.conversation : (type === 'extendedTextMessage') ? zay.message.extendedTextMessage.text : ''
-			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
-			const args = body.trim().split(/ +/).slice(1)
-			const isCmd = body.startsWith(prefix)
-			chats = (type === 'conversation') ? zay.message.conversation : (type === 'extendedTextMessage') ? zay.message.extendedTextMessage.text : ''
-		    const arg = chats.slice(command.length + 2, chats.length)
+	    body = (type === 'conversation' && zay.message.conversation.startsWith(prefix)) ? zay.message.conversation : (type == 'imageMessage') && zay.message.imageMessage.caption.startsWith(prefix) ? zay.message.imageMessage.caption : (type == 'videoMessage') && zay.message.videoMessage.caption.startsWith(prefix) ? zay.message.videoMessage.caption : (type == 'extendedTextMessage') && zay.message.extendedTextMessage.text.startsWith(prefix) ? zay.message.extendedTextMessage.text : ''	
+	    budy = (type === 'conversation') ? zay.message.conversation : (type === 'extendedTextMessage') ? zay.message.extendedTextMessage.text : ''
+	    const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
+	    const args = body.trim().split(/ +/).slice(1)
+	    const isCmd = body.startsWith(prefix)
+	    chats = (type === 'conversation') ? zay.message.conversation : (type === 'extendedTextMessage') ? zay.message.extendedTextMessage.text : ''
+	    const arg = chats.slice(command.length + 2, chats.length)
 
 			mess = {
 				wait: '⌛ Sedang di Prosess ⌛',
@@ -163,7 +163,7 @@ const LolKey = 'Ini Apikey'                 //LOLHUMAN
 				}
 			}
 			
-            const totalchat = await zayy.chats.all()
+                        const totalchat = await zayy.chats.all()
 			const botNumber = zayy.user.jid
 			const ownerNumber = [`${setting.ownerNumber}@s.whatsapp.net`] 
 			const isGroup = from.endsWith('@g.us')
@@ -185,7 +185,7 @@ const LolKey = 'Ini Apikey'                 //LOLHUMAN
 			const isOwner = ownerNumber.includes(sender)
 			const q = args.join(' ')
 			const conts = zay.key.fromMe ? zayy.user.jid : zayy.contacts[sender] || { notify: jid.replace(/@.+/, '') }
-            const pushname = zay.key.fromMe ? zayy.user.name : conts.notify || conts.vname || conts.name || '-'
+                        const pushname = zay.key.fromMe ? zayy.user.name : conts.notify || conts.vname || conts.name || '-'
 
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))

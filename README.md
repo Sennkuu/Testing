@@ -9,9 +9,9 @@
 </p>
 <p align="center">
 <a href="https://github.com/Sennkuu/followers"><img title="Followers" src="https://img.shields.io/github/followers/Sennkuu?color=blue&style=flat-square"></a>
-<a href="https://github.com/Sennkuu/megumikato2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Sennkuu/bot-whatsapp?color=red&style=flat-square"></a>
-<a href="https://github.com/Sennkuu/megumikato2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/SennkuuSennkuuSennkuu/bot-wa?color=red&style=flat-square"></a>
-<a href="https://github.com/Sennkuu/megumikato2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SennkuuSennkuuSennkuuSennkuu/bot-wa?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Sennkuu/megumikato2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Sennkuu/SelfBot?color=red&style=flat-square"></a>
+<a href="https://github.com/Sennkuu/megumikato2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Sennkuu/SelfBot?color=red&style=flat-square"></a>
+<a href="https://github.com/Sennkuu/megumikato2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Sennkuu/SelfBot?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 <p align='center'>
    <a href="https://instagram.com/calmepaa__"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>

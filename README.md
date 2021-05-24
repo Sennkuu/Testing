@@ -33,20 +33,9 @@ you've just cloned!!
 > WhatsApp
 ```
 
-## Install
-Follow The Steps Below!
 
-```bash
-> termux-setup-storage
-(after that tap on permission)
-> pkg update -y
-> pkg upgrade -y
-> pkg install git -y
-> pkg install nodejs
-> git clone https://github.com/Sennkuu/SelfBot
-> cd SelfBot
-> npm install
-> npm start / node index.js
-```
+
+
+
 
 

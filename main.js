@@ -24,7 +24,7 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 
 baterai = {
     baterai: 0,
-    cas: true
+    cas: false
 }
 
 require('./index.js')

@@ -39,10 +39,10 @@ Follow The Steps Below!
 ```bash
 > termux-setup-storage
 (after that tap on permission)
-> apt update -y
-> apt upgrade -y
-> apt install git -y
-> apt install nodejs
+> pkg update -y
+> pkg upgrade -y
+> pkg install git -y
+> pkg install nodejs
 > git clone https://github.com/Sennkuu/SelfBot
 > cd SelfBot
 > npm install

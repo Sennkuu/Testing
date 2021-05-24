@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://media.giphy.com/media/FeVg8ViEczcxG/giphy.gif" alt="GIF" width="150" height="128"/>
+<img src="https://avatars.githubusercontent.com/Sennkuu" width="225" height="225"/>
 </p>
 <p align="center">
 <a href="#"><img title="Sennku BOT" src="https://img.shields.io/badge/Sennkuu BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
